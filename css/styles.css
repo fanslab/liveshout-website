@@ -6580,3 +6580,66 @@ section {
   color: #33bca8;
   font-weight: 100;
 }
+#team h1 {
+  font-size: 45px;
+  font-weight: 900;
+  color: #ef3e36;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#team-carousel ul.list-inline {
+  text-align: center;
+}
+#team-carousel ul.list-inline li {
+  padding: 0 15px;
+}
+#team-carousel .team-member {
+  vertical-align: top;
+  height: 240px;
+}
+#team-carousel .team-member img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+#team-carousel .team-member h2 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 5px;
+}
+#team-carousel .team-member h3 {
+  font-size: 13px;
+  font-weight: 100;
+  margin: 0;
+}
+#team-carousel .carousel-control {
+  width: 10%;
+  opacity: 1;
+}
+#team-carousel .carousel-control.left {
+  background: none;
+}
+#team-carousel .carousel-control.left .glyphicon {
+  left: 0;
+  margin-left: 0;
+}
+#team-carousel .carousel-control.right {
+  background: none;
+}
+#team-carousel .carousel-control.right .glyphicon {
+  right: 0;
+  margin-right: 0;
+}
+#team-carousel .carousel-control .glyphicon {
+  width: 47px;
+  height: 47px;
+  background-color: #B9BDBC;
+  color: #fff;
+  border-radius: 50%;
+  padding: 7px;
+  text-shadow: none;
+  margin-top: -60px;
+}
+#team-carousel .carousel-control:hover .glyphicon {
+  background-color: #ef3e36;
+}

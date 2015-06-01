@@ -48,3 +48,84 @@ section {
     }
   }
 }
+
+#team {
+  h1 {
+    font-size: 45px;
+    font-weight: 900;
+    color: @brand-primary;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+#team-carousel {
+  ul.list-inline {
+    text-align: center;
+
+    li {
+      padding: 0 15px;
+    }
+  }
+
+  .team-member {
+    vertical-align: top;
+    height: 240px;
+
+    img {
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 300;
+      margin: 5px;
+    }
+
+    h3 {
+      font-size: 13px;
+      font-weight: 100;
+      margin: 0;
+    }
+
+  }
+
+  .carousel-control {
+    width: 10%;
+    opacity: 1;
+
+    &.left {
+      background: none;
+      .glyphicon {
+        left: 0;
+        margin-left: 0;
+      }
+    }
+    &.right {
+      background: none;
+      .glyphicon {
+        right: 0;
+        margin-right: 0;
+      }
+    }
+
+    .glyphicon {
+      width: 47px;
+      height: 47px;
+      background-color: #B9BDBC;
+      color: #fff;
+      border-radius: 50%;
+      padding: 7px;
+      text-shadow: none;
+      margin-top: -60px;
+    }
+
+    &:hover {
+      .glyphicon {
+        background-color: @brand-primary;
+      }
+    }
+  }
+}
