@@ -1,1 +1,50 @@
 @import "../bower_components/bootstrap/less/bootstrap.less";
+@import "variables.less";
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:300,400,700,900,300italic,400italic,700italic,900italic);
+
+section {
+  padding-top: @navbar-height;
+}
+
+.navbar-brand {
+  > img {
+    margin-top: 20px;
+  }
+}
+
+.navbar-nav {
+  text-transform: uppercase;
+  font-weight: 900;
+
+  > li {
+    margin-top: 60px;
+  }
+}
+
+#what {
+  font-size: 24px;
+  font-weight: 100;
+  text-transform: uppercase;
+
+  .hero {
+    margin-bottom: 80px;
+  }
+
+  p {
+    margin: 0 40px 20px 40px;
+
+    &:first-of-type {
+      strong {
+        color: @brand-primary;
+        font-weight: 100;
+      }
+    }
+    &:last-of-type {
+      strong {
+        color: @navbar-default-link-color;
+        font-weight: 100;
+      }
+    }
+  }
+}
