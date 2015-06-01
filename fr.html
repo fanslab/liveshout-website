@@ -17,10 +17,9 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="100">
 
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -45,6 +44,7 @@
     </nav>
 
     <div class="container">
+      <div class="padding"></div>
 
       <section id="what">
         <img src="img/quoi.jpg" alt="Rassemblez les émotions de vos fans sur vos plateformes On Air, Online et On Site" class="hero" />
@@ -200,5 +200,18 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".nav li a[href^='#']").on('click', function(e) {
+          e.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+           scrollTop: $(hash).offset().top
+          }, 300, function (){
+           window.location.hash = hash;
+          });
+        });
+      });
+    </script>
   </body>
 </html>
