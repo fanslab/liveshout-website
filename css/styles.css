@@ -6711,6 +6711,12 @@ section > img {
 #contact textarea {
   height: 135px;
 }
+#contact .error {
+  display: block;
+  font-size: .8em;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 2px 0 0 21px;
+}
 #contact .btn-primary {
   float: right;
   padding: 4px 30px;
