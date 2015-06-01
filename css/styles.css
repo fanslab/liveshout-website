@@ -6568,7 +6568,7 @@ section > img {
   margin-top: 60px;
 }
 #what {
-  font-size: 24px;
+  font-size: 1.4em;
   text-transform: uppercase;
 }
 #what .hero {
@@ -6586,12 +6586,15 @@ section > img {
   font-weight: 100;
 }
 #team h1 {
-  font-size: 45px;
+  font-size: 3em;
   font-weight: 700;
   color: #ef3e36;
   text-transform: uppercase;
   margin-bottom: 40px;
   text-align: center;
+}
+#team-carousel .carousel-indicators {
+  display: none;
 }
 #team-carousel ul.list-inline {
   text-align: center;
@@ -6602,17 +6605,19 @@ section > img {
 #team-carousel .team-member {
   vertical-align: top;
   height: 240px;
+  color: #2c3e50;
 }
 #team-carousel .team-member img {
   border-radius: 50%;
   margin-bottom: 20px;
 }
 #team-carousel .team-member h2 {
-  font-size: 16px;
+  font-size: 1em;
   margin: 5px;
 }
 #team-carousel .team-member h3 {
-  font-size: 13px;
+  font-size: .8em;
+  line-height: 1.4em;
   margin: 0;
 }
 #team-carousel .carousel-control {
@@ -6655,7 +6660,7 @@ section > img {
 }
 #contact h1 {
   color: #262262;
-  font-size: 40px;
+  font-size: 2.5em;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
@@ -6663,7 +6668,8 @@ section > img {
 }
 #contact h2 {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1.15em;
+  line-height: 1.2em;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -6682,7 +6688,7 @@ section > img {
 #contact label {
   font-weight: 100;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: .8em;
   padding-bottom: 5px;
 }
 #contact input[type="text"],
@@ -6690,7 +6696,7 @@ section > img {
 #contact textarea {
   background-color: #3FB79F;
   border: 1px solid transparent;
-  font-size: 12px;
+  font-size: .9em;
   color: #fff;
   padding: 15px 20px;
 }
@@ -6717,7 +6723,7 @@ section > img {
   border: 1px solid #2c3e50;
 }
 footer {
-  font-size: 12px;
+  font-size: .75em;
   color: #ddd;
   text-align: center;
   text-transform: uppercase;

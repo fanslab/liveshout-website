@@ -27,11 +27,15 @@ section {
 
   > li {
     margin-top: 60px;
+
+    @media (min-width: @screen-sm-min) {
+
+    }
   }
 }
 
 #what {
-  font-size: 24px;
+  font-size: 1.4em;
   text-transform: uppercase;
 
   .hero {
@@ -58,7 +62,7 @@ section {
 
 #team {
   h1 {
-    font-size: 45px;
+    font-size: 3em;
     font-weight: 700;
     color: @brand-primary;
     text-transform: uppercase;
@@ -68,6 +72,11 @@ section {
 }
 
 #team-carousel {
+
+  .carousel-indicators {
+    display: none;
+  }
+
   ul.list-inline {
     text-align: center;
 
@@ -79,6 +88,7 @@ section {
   .team-member {
     vertical-align: top;
     height: 240px;
+    color: #2c3e50;
 
     img {
       border-radius: 50%;
@@ -86,12 +96,13 @@ section {
     }
 
     h2 {
-      font-size: 16px;
+      font-size: 1em;
       margin: 5px;
     }
 
     h3 {
-      font-size: 13px;
+      font-size: .8em;
+      line-height: 1.4em;
       margin: 0;
     }
 
@@ -144,7 +155,7 @@ section {
 
   h1 {
     color: #262262;
-    font-size: 40px;
+    font-size: 2.5em;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
@@ -153,14 +164,14 @@ section {
 
   h2 {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 1.15em;
+    line-height: 1.2em;
     text-align: center;
     margin-bottom: 60px;
   }
 
   address {
     line-height: 1.5em;
-
     p {
       margin-bottom: 20px;
     }
@@ -177,14 +188,14 @@ section {
   label {
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: .8em;
     padding-bottom: 5px;
   }
 
   input[type="text"], input[type="email"], textarea {
     background-color: #3FB79F;
     border: 1px solid transparent;
-    font-size: 12px;
+    font-size: .9em;
     color: #fff;
     padding: 15px 20px;
 
@@ -213,7 +224,7 @@ section {
 }
 
 footer {
-  font-size: 12px;
+  font-size: .75em;
   color: #ddd;
   text-align: center;
   text-transform: uppercase;
