@@ -7,7 +7,12 @@
     <meta name="description" content="Liveshout est une plateforme sociale offrant de nouvelles possibilités d'expression aux téléspectateurs quant au contenu qu'ils regardent. L'application permet de partager ses réactions facilement et rapidement, en plus de favoriser l'interaction entre les usagers." url="http://liveshout.com">
     <meta name="keywords" content="social tv, liveshout, second screen, app, mobile, website, Frederick Dompierre, Christian Dompierre, Stephane Dumont" url="http://liveshout.com">
     <meta name="author" content="Liveshout">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel='icon' type='image/png' href=assetUrl('favicon-192x192.png' sizes='192x192'>
+    <link rel='icon' type='image/png' href=assetUrl('favicon-160x160.png' sizes='160x160'>
+    <link rel='icon' type='image/png' href=assetUrl('favicon-96x96.png' sizes='96x96'>
+    <link rel='icon' type='image/png' href=assetUrl('favicon-16x16.png' sizes='16x16'>
+    <link rel='icon' type='image/png' href=assetUrl('favicon-32x32.png' sizes='32x32'>
     <title>Liveshout - Divertissement social</title>
     <link href="css/styles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -17,10 +22,9 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar-main" data-offset="100">
 
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="navbar-main" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -29,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" href="#">
             <img src="img/logo.png" alt="Liveshout™, divertissement social" />
           </a>
         </div>
@@ -45,6 +49,7 @@
     </nav>
 
     <div class="container">
+      <div class="padding"></div>
 
       <section id="what">
         <img src="img/quoi.jpg" alt="Rassemblez les émotions de vos fans sur vos plateformes On Air, Online et On Site" class="hero" />
@@ -63,7 +68,6 @@
       <section id="team">
         <h1>Leadership</h1>
         <div id="team-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-          <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#team-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#team-carousel" data-slide-to="1"></li>
@@ -87,15 +91,15 @@
                   <h2>Renaud Sylvain</h2>
                   <h3>Développement des affaires</h3>
                 </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul class="list-inline">
                 <li class="team-member">
                   <img src="img/team/photo-team-09.jpg" alt="" />
                   <h2>Nicolas Mercier</h2>
                   <h3>Développeur principal</h3>
                 </li>
-              </ul>
-            </div>
-            <div class="item">
-              <ul class="list-inline">
                 <li class="team-member">
                   <img src="img/team/photo-team-10.jpg" alt="" />
                   <h2>Olivier Fortin</h2>
@@ -106,15 +110,15 @@
                   <h2>Sophie Pigeon</h2>
                   <h3>Coordonnatrice,<br>Développement stratégique</h3>
                 </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul class="list-inline">
                 <li class="team-member">
                   <img src="img/team/photo-team-05.jpg" alt="" />
                   <h2>Stéphane Vidal</h2>
                   <h3>Mentor</h3>
                 </li>
-              </ul>
-            </div>
-            <div class="item">
-              <ul class="list-inline">
                 <li class="team-member">
                   <img src="img/team/photo-team-08.jpg" alt="" />
                   <h2>Karim Salabi</h2>
@@ -172,21 +176,21 @@
             </address>
           </div>
           <div class="col-sm-7">
-            <form id="formulario" action="/" method="post">
+            <form id="contact-form" action="/" method="post">
               <div class="form-group">
                 <label for="name">Nom</label>
-                <input id="name" type="text" name="nameform" value="" class="form-control">
+                <input id="name" type="text" name="name" value="" class="form-control">
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input id="email" type="email" name="emailform" value="" class="form-control">
+                <input id="email" type="text" name="emailFrom" value="" class="form-control">
               </div>
               <div class="form-group">
                 <label for="message">Ton message</label>
-                <textarea id="message" name="messageform" class="form-control"></textarea>
+                <textarea id="message" name="message" class="form-control"></textarea>
               </div>
               <div>
-                <button type="submit" class="btn btn-primary" id="submit">Envoyer!</button>
+                <button type="submit" class="btn btn-primary">Envoyer!</button>
               </div>
             </form>
           </div>
@@ -200,65 +204,54 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- CONTACT FORM -->
-<script type="text/javascript">
-$(document).ready(function(){
-	$("#submit").click(function(){					   				   
-		$(".error").hide();
-		var hasError = false;
-		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-		
-		
-		
-		var emailFromVal = $("#emailform").val();
-		if(emailFromVal == '') {
-			$("#emailform").after('<span class="error">Tu as oublié de saisir ton adresse courriel.</span>');
-			hasError = true;
-		} else if(!emailReg.test(emailFromVal)) {	
-			$("#emailform").after('<span class="error">SVP saisie une adresse courriel valide.</span>');
-			hasError = true;
-		}
-		
-		var nameVal = $("#nameform").val();
-		if(nameVal == '') {
-			$("#nameform").after('<span class="error">Tu as oublié de saisir ton nom.</span>');
-			hasError = true;
-		}
-		
-		var messageVal = $("#messageform").val();
-		if(messageVal == '') {
-			$("#messageform").after('<span class="error">Tu as oublié de saisir ton message.</span>');
-			hasError = true;
-		}
-		
-		
-		if(hasError == false) {
-			$.post("sendemail.php",
-   				{ emailFrom: emailFromVal, name: nameVal, message: messageVal },
-				
-             	
-   					function(data){
-						success: console.log(data);
-             
-						$("#sendEmail").slideUp("normal", function() {				   
-							
-							$("#sendEmail").before('<h3 style="color:#FFF !important;">Bravo!</h3><p>Ton message a été envoyé! Nous te contactons dans les 48 heures.</p>');											
-						});
-   					}
-				 );
-		}
-		
-		return false;
-	});						   
-});
-</script>
-
-<!-- Google Analytics -->
-<script>
-	var _gaq=[['_setAccount','UA-29115111-1'],['_trackPageview']];
-	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-	s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
+    <script type="text/javascript">
+      $(function () {
+        $(".nav li a[href^='#']").on('click', function (e) {
+          e.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 300, function (){
+            window.location.hash = hash;
+            $('.collapse').collapse('hide');
+          });
+        });
+        $('#contact-form').on('submit', function (e) {
+          $(".error").hide();
+      		var hasError = false;
+      		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+      		var emailFromVal = $("#email").val();
+      		if(emailFromVal == '') {
+      			$("#email").after('<span class="error">Tu as oublié de saisir ton adresse courriel.</span>');
+      			hasError = true;
+      		} else if(!emailReg.test(emailFromVal)) {
+      			$("#email").after('<span class="error">SVP saisie une adresse courriel valide.</span>');
+      			hasError = true;
+      		}
+      		var nameVal = $("#name").val();
+      		if(nameVal == '') {
+      			$("#name").after('<span class="error">Tu as oublié de saisir ton nom.</span>');
+      			hasError = true;
+      		}
+      		var messageVal = $("#message").val();
+      		if(messageVal == '') {
+      			$("#message").after('<span class="error">Tu as oublié de saisir ton message.</span>');
+      			hasError = true;
+      		}
+      		if(!hasError) {
+      			$.post("sendemail.php", {
+              emailFrom: emailFromVal,
+              name: nameVal,
+              message: messageVal
+            }, function (data) {
+              $("#contact-form").slideUp("normal", function () {
+                $("#contact-form").before('<h3>Bravo!</h3><p>Ton message a été envoyé! Nous te contactons dans les 48 heures.</p>');
+              });
+         		});
+      		}
+      		return false;
+        });
+      });
+    </script>
   </body>
 </html>
