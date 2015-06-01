@@ -1,10 +1,13 @@
 @import "../bower_components/bootstrap/less/bootstrap.less";
 @import "variables.less";
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:300,400,700,900,300italic,400italic,700italic,900italic);
-
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 section {
   padding-top: @navbar-height;
+
+  > img {
+    max-width: 100%;
+  }
 }
 
 .navbar-brand {
@@ -15,7 +18,7 @@ section {
 
 .navbar-nav {
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
 
   > li {
     margin-top: 60px;
@@ -24,7 +27,6 @@ section {
 
 #what {
   font-size: 24px;
-  font-weight: 100;
   text-transform: uppercase;
 
   .hero {
@@ -52,7 +54,7 @@ section {
 #team {
   h1 {
     font-size: 45px;
-    font-weight: 900;
+    font-weight: 700;
     color: @brand-primary;
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -80,13 +82,11 @@ section {
 
     h2 {
       font-size: 16px;
-      font-weight: 300;
       margin: 5px;
     }
 
     h3 {
       font-size: 13px;
-      font-weight: 100;
       margin: 0;
     }
 
@@ -128,4 +128,88 @@ section {
       }
     }
   }
+}
+
+#contact {
+  background-color: #49C9AF;
+  color: #fff;
+  padding: @navbar-height 40px 80px 40px;
+  font-weight: 100;
+
+  h1 {
+    color: #262262;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  address {
+    line-height: 1.5em;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    background-color: #3FB79F;
+    border: 1px solid transparent;
+    font-size: 12px;
+    color: #fff;
+    padding: 15px 20px;
+
+    &:focus {
+      border: 1px solid darken(#3FB79F, 2%);
+      outline: 0 none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+  }
+
+  textarea {
+    height: 135px;
+  }
+
+  .btn-primary {
+    float: right;
+    padding: 4px 30px;
+    border-radius: 0;
+
+    &:hover, &:focus, &:active {
+      background-color: #2c3e50;
+      border: 1px solid #2c3e50;
+    }
+  }
+}
+
+footer {
+  font-size: 12px;
+  color: #ddd;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 80px 0;
 }
