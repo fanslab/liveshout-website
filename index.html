@@ -1,257 +1,584 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Liveshout est une plateforme sociale offrant de nouvelles possibilités d'expression aux téléspectateurs quant au contenu qu'ils regardent. L'application permet de partager ses réactions facilement et rapidement, en plus de favoriser l'interaction entre les usagers." url="http://liveshout.com">
-    <meta name="keywords" content="social tv, liveshout, second screen, app, mobile, website, Frederick Dompierre, Christian Dompierre, Stephane Dumont" url="http://liveshout.com">
-    <meta name="author" content="Liveshout">
-    <link rel="icon" href="favicon.ico">
-    <link rel='icon' type='image/png' href=assetUrl('favicon-192x192.png' sizes='192x192'>
-    <link rel='icon' type='image/png' href=assetUrl('favicon-160x160.png' sizes='160x160'>
-    <link rel='icon' type='image/png' href=assetUrl('favicon-96x96.png' sizes='96x96'>
-    <link rel='icon' type='image/png' href=assetUrl('favicon-16x16.png' sizes='16x16'>
-    <link rel='icon' type='image/png' href=assetUrl('favicon-32x32.png' sizes='32x32'>
-    <title>Liveshout - Divertissement social</title>
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+<head>
+<meta charset="utf-8">
 
-  <body data-spy="scroll" data-target="#navbar-main" data-offset="100">
+<!-- TITLE OF SITE -->
+<title>Liveshout App - Solution personnalisée pour évènements inoubliables</title>
 
-    <nav id="navbar-main" class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.png" alt="Liveshout™, divertissement social" />
-          </a>
+<!-- META DATA -->
+<meta name="description" content="Liveshout augmente l'expérience des fans lors d'événements variés en s'appuyant sur le partage d'émotions comme vecteur d'engagement et de loyauté." url="http://liveshout.com">
+<meta name="keywords" content="social tv, liveshout, second screen, app, mobile, website, Frederick Dompierre, Stephane Dumont, Revolver 3, divertissement" url="http://liveshout.com">
+<meta name="google-site-verification" content="Vg2K8QyiBqZ8fh0KzvJ3MCTQmY44ZtcYf7WJoveir_U" />
+<meta name="author" content="Liveshout">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- =========================
+	FAV AND TOUCH ICONS
+	============================== -->
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- =========================
+	STYLESHEETS
+	============================== -->
+<!-- BOOTSTRAP CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- EXTERNAL PLUGIN CSS -->
+<link rel="stylesheet" href="css/swiper.min.css">
+<!-- Screenshot Slider -->
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<!-- Screenshot Slider -->
+<link rel="stylesheet" href="css/themes/default/default.css">
+<!-- Nivo Lightbox -->
+
+<!-- TYPOGRAPHY -->
+<link id="fromTypography" href="css/typography/typography-1.css" rel="stylesheet">
+
+<!-- CUSTOM CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- COLORS -->
+<link id="fromColor" href="css/colors/blue.css" rel="stylesheet">
+
+<!-- RESPONSIVE FIXES -->
+<!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body class="body-container">
+<a name="home" id="home"></a>
+<div id="page" class="page"> <!-- start page -->
+
+  <!-- =========================
+     NAVBAR
+============================== -->
+  <div class="navbar navbar-nemo navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nemo-navigation" aria-expanded="false"> <span class="sr-only">Navigation</span> <span class="icon-bar icon-bar-top"></span> <span class="icon-bar icon-bar-middle"></span> <span class="icon-bar icon-bar-bottom"></span> </button>
+
+        <!-- YOUR LOGO -->
+        <a class="navbar-brand" href="#home"> <img src="images/logo-alt.png" alt=""> </a> </div>
+      <div class="collapse navbar-collapse" id="nemo-navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="#benefices">Bénéfices</a></li>
+          <li><a href="#tarification">Tarification</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="visible-md visible-lg visible-xs"><a href="https://calendly.com/fanslab/" target="_blank"><img src="images/btn_appel.png" width="179" height="36" alt="Planifiez un appel"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+     HOME
+============================== -->
+  <section class="home book-home dark-image-bg gradient-overlay editBG" id="book-home">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-1 col-md-push-5">
+          <h1 class="heading-text"><span>LIVESHOUT APP</span><br/>
+          Solution personnalisée pour évènements inoubliables</h1>
+          <ul class="list-block mb50">
+            <li> <i class="icon svg-arrow-carrot-right-alt"></i> Compagnon d'audiences engagées </li>
+            <li> <i class="icon svg-arrow-carrot-right-alt"></i> Créateur d'expériences immersives </li>
+            <li> <i class="icon svg-arrow-carrot-right-alt"></i> Amplificateur de résultats </li>
+          </ul>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#what">Quoi</a></li>
-            <li><a href="#how">Comment</a></li>
-            <li><a href="#team">Équipe</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <div class="col-md-5 col-md-pull-7"> <img src="images/phones.png" alt="" class="img-responsive img-center"> </div>
+      </div>
+      <!-- /.row -->
+    </div>
+  </section>
+
+  <!-- =========================
+     EXP
+============================== -->
+  <a name="experience" id="experience"></a>
+  <section class="features app-features-1 text-center white-bg padding-120-0" id="app-features-1" style="margin-bottom:-50px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-8 col-sm-10">
+          <div class="section-heading">
+            <h2 class="heading-text">EXPÉRIENCE LIVESHOUT</h2>
+            <hr class="lines">
+            <p class="sub-heading">Solution personnalisée<br>
+              Scénariser et adapter l'expérience de l'audience en temps réel</p>
+          </div>
+          <!-- /.section-heading -->
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- =========================
+     SMALL FEATURE
+============================== -->
+
+      <div class="row mt30">
+        <div class="col-md-4 col-sm-8 col-md-offset-0 col-sm-offset-2">
+          <div class="media">
+            <div class="media-body text-center">
+              <h2 class="title-text">PRÉ</h2>
+              <h3 class="title-text">Fort engouement</h3>
+              <p>Stimuler l'intérêt pour intensifier le momentum et la promotion de votre évènement</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-8 col-md-offset-0 col-sm-offset-2">
+          <div class="media">
+            <div class="media-body text-center">
+              <h2 class="title-text">PENDANT</h2>
+              <h3 class="title-text">Moments uniques</h3>
+              <p>Transformer votre évènement en expérience interactive inoubliable</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-8 col-md-offset-0 col-sm-offset-2">
+          <div class="media">
+            <div class="media-body text-center">
+              <h2 class="title-text">POST</h2>
+              <h3 class="title-text">Souvenirs mémorables</h3>
+              <p>Valoriser les contenus clés et les moments forts de l'évènement pour consolider l'engagement envers la marque</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="feature-screen mb30"> <img src="images/feature-screen.png" alt="" class="img-responsive img-center"> </div>
+    </div>
+  </section>
+  <section class="secondary-bg text-center p_tb75">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-8 col-md-offset-0 col-sm-offset-0 p_lr45">
+          <div class="feature-item"> <i class="icon svg-basic-display icon-md"></i>
+            <h3 class="title-text">CONFÉRENCE</h3>
+          </div>
+        </div>
+        <!--<div class="col-md-2 col-sm-8 col-md-offset-0 col-sm-offset-0 p_lr45">
+          <div class="feature-item"> <i class="icon svg-star-regular icon-md"></i>
+            <h3 class="title-text">Congrès<br>
+              Exposition</h3>
+          </div>
+        </div> -->
+        <div class="col-md-3 col-sm-8 col-md-offset-0 col-sm-offset-0 p_lr45">
+          <div class="feature-item"> <i class="icon svg-music icon-md"></i>
+            <h3 class="title-text">CULTURE</h3>
+          </div>
+        </div>
+        <!--<div class="col-md-2 col-sm-8 col-md-offset-0 col-sm-offset-0 p_lr45">
+          <div class="feature-item"> <i class="icon svg-radio icon-md"></i>
+            <h3 class="title-text">Médias et divertissements</h3>
+          </div>
+        </div> -->
+        <div class="col-md-3 col-sm-8 col-md-offset-0 col-sm-offset-0 p_lr45">
+          <div class="feature-item"> <i class="icon svg-ball icon-md"></i>
+            <h3 class="title-text">SPORT</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-8 col-md-offset-0 col-sm-offset-0 p_lr45">
+          <div class="feature-item"> <i class="icon svg-plane icon-md"></i>
+            <h3 class="title-text">MARQUE</h3>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+  </section>
+
+  <!-- =========================
+     FONCTIONNALITES
+============================== -->
+  <a name="fonctionnalites" id="fonctionnalites"></a>
+  <section class="features app-features-4 white-bg padding-120-75" id="app-features-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-8 col-sm-10">
+          <div class="section-heading text-center">
+            <h2 class="heading-text" id="edit1">FONCTIONNALITÉS</h2>
+            <hr class="lines">
+            <p class="sub-heading" id="edit2">Solution personnalisée<br>
+              Scénariser et adapter l'expérience de l'audience en temps réel</p>
+          </div>
+          <!-- /.section-heading -->
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-md-4 mt50 mb50">
+          <!-- FEATURE SIDE CONTENT -->
+          <div class="feature-item feature-side-content clearfix" data-swiper-slide-to="1"> <i class="icon svg-calendar-regular icon-shape pull-right icon-border-1 width-65 radius-20" id="edit3"></i>
+            <div class="feature-content pull-left">
+              <h3 class="title-text" id="edit4">Programme</h3>
+              <p id="edit5" style="color:#A1A2A4; font-size:14px;">Affichez l'horaire de votre évènement et effectuez les mises à jour en temps réel.</p>
+            </div>
+          </div>
+          <!-- /END FEATURE SIDE CONTENT -->
+
+          <!-- FEATURE SIDE CONTENT -->
+          <div class="feature-item feature-side-content clearfix" data-swiper-slide-to="2"> <i class="icon svg-users icon-shape pull-right icon-border-1 width-65 radius-20" id="edit6"></i>
+            <div class="feature-content pull-left">
+              <h3 class="title-text" id="edit7">Profils: conférenciers, exposants, artistes</h3>
+              <p id="edit8" style="color:#A1A2A4; font-size:14px;">Présentez vos invités de marque&nbsp;: photo, bio, site, réseaux sociaux et plus.</p>
+            </div>
+          </div>
+          <!-- /END FEATURE SIDE CONTENT -->
+
+          <!-- FEATURE SIDE CONTENT -->
+          <div class="feature-item feature-side-content clearfix" data-swiper-slide-to="3"> <i class="icon svg-link icon-shape pull-right icon-border-1 width-65 radius-20" id="edit9"></i>
+            <div class="feature-content pull-left">
+              <h3 class="title-text" id="edit10">Connexion réseaux sociaux</h3>
+              <p id="edit11" style="color:#A1A2A4; font-size:14px;">Facilitez le processus d'inscription grâce aux connecteurs sociaux (Facebook, Linkedin, Twitter, etc.).</p>
+            </div>
+          </div>
+          <!-- /END FEATURE SIDE CONTENT -->
+        </div>
+        <div class="col-md-4">
+          <!-- FEATURE SWIPER  -->
+          <div class="features-swiper"> <img src="images/screenshots/screenshot-frame.png" class="screenshot-frame" alt="">
+            <div class="swiper-container" id="features-swiper">
+              <div class="swiper-wrapper">
+                <!-- SLIDES -->
+                <div class="swiper-slide"> <img src="images/screenshots/programme.png" alt="s" id="edit12"> </div>
+                <div class="swiper-slide"> <img src="images/screenshots/profile.png" alt="s" id="edit13"> </div>
+                <div class="swiper-slide"> <img src="images/screenshots/signin.png" alt="s" id="edit14"> </div>
+                <div class="swiper-slide"> <img src="images/screenshots/feed.png" alt="s" id="edit15"> </div>
+                <div class="swiper-slide"> <img src="images/screenshots/quiz.png" alt="s" id="edit16"> </div>
+                <div class="swiper-slide"> <img src="images/screenshots/attendees.png" alt="s" id="edit17"> </div>
+              </div>
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <!-- /END FEATURE SWIPER  -->
+        </div>
+        <div class="col-md-4 mt50">
+          <!-- FEATURE SIDE CONTENT -->
+          <div class="feature-item feature-side-content clearfix" data-swiper-slide-to="4"> <i class="icon svg-chat icon-shape pull-left icon-border-1 width-65 radius-20" id="edit18"></i>
+            <div class="feature-content pull-right">
+              <h3 class="title-text" id="edit19">Fil de réactions instantanées</h3>
+              <p id="edit20" style="color:#A1A2A4; font-size:14px;">Engagez vos participants en facilitant les échanges de groupes et individuels en tout temps.</p>
+            </div>
+          </div>
+          <!-- /END FEATURE SIDE CONTENT -->
+
+          <!-- FEATURE SIDE CONTENT -->
+          <div class="feature-item feature-side-content clearfix" data-swiper-slide-to="5"> <i class="icon svg-graph icon-shape pull-left icon-border-1 width-65 radius-20" id="edit21"></i>
+            <div class="feature-content pull-right">
+              <h3 class="title-text" id="edit22">Sondage en temps réel</h3>
+              <p id="edit23" style="color:#A1A2A4; font-size:14px;">Permettez à votre audience de s'impliquer dans l'événement en participant à des sondages, quiz ou autres jeux instantanément.</p>
+            </div>
+          </div>
+          <!-- /END FEATURE SIDE CONTENT -->
+
+          <!-- FEATURE SIDE CONTENT -->
+          <div class="feature-item feature-side-content clearfix" data-swiper-slide-to="6"> <i class="icon svg-global icon-shape pull-left icon-border-1 width-65 radius-20" id="edit24"></i>
+            <div class="feature-content pull-right">
+              <h3 class="title-text" id="edit25">Réseautage virtuel</h3>
+              <p id="edit26" style="color:#A1A2A4; font-size:14px;">Facilitez le réseautage grâce au répertoire des participants et à la messagerie privée.</p>
+            </div>
+          </div>
+          <!-- /END FEATURE SIDE CONTENT -->
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
+
+  <!-- =========================
+     BENEFICES
+============================== -->
+  <a name="benefices" id="benefices"></a>
+  <section class="features app-features-5 padding-120-0 lg-bg" id="app-features-5-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-8 col-sm-10">
+          <div class="section-heading text-center">
+            <h2 class="heading-text">BÉNÉFICES</h2>
+            <hr class="lines">
+            <p class="sub-heading">Solution personnalisée<br>
+              Scénariser et adapter l'expérience de l'audience en temps réel</p>
+          </div>
+          <!-- /.section-heading -->
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-md-6 col-sm-8 col-md-offset-0 col-sm-offset-2"> <img src="images/app-desc-3.png" alt="" class="img-responsive img-left"> </div>
+        <div class="col-md-6 col-sm-8 col-md-offset-0 col-sm-offset-2 mb50">
+          <div class="media">
+            <div class="media-right"> <i class="icon svg-check width-100"></i> </div>
+            <div class="media-body">
+              <h3 class="title-text" style="color:#00A4E1; padding-top:7px;">UTILE ET SIMPLE</h3>
+              <ul>
+                <li>Navigation intuitive et design épuré</li>
+                <li>Information centralisée et mises à jour instantanées</li>
+                <li>Amélioration de la rentabilité des ressources internes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-right"> <i class="icon svg-check width-100"></i> </div>
+            <div class="media-body">
+              <h3 class="title-text" style="color:#00A4E1; padding-top:7px;">INTERACTIF ET ENGAGEANT</h3>
+              <ul>
+                <li>Discussion continue</li>
+                <li>Valorisation de la contribution de l'audience</li>
+                <li>Contenus et échanges enrichis</li>
+              </ul>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-right"> <i class="icon svg-check width-100"></i> </div>
+            <div class="media-body">
+              <h3 class="title-text" style="color:#00A4E1; padding-top:7px;">PERFORMANT</h3>
+              <ul>
+                <li>Amélioration de la connaissance et des préférences des participants</li>
+                <li>Loyauté de l'audience et des partenaires</li>
+                <li>Exploitation des opportunités de monétisation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+  </section>
+
+  <!-- =========================
+     PRICING TABLE
+============================== -->
+  <a name="tarification" id="tarification"></a>
+  <section class="pricing-tables pricing-table-1 padding-120-75 secondary-bg" id="pricing-table">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-8 col-sm-10">
+          <div class="section-heading text-center">
+            <h2 class="heading-text">TARIFICATION</h2>
+            <hr class="lines">
+            <p class="sub-heading">Solution personnalisée<br>
+              Scénariser et adapter l'expérience de l'audience en temps réel</p>
+          </div>
+          <!-- /.section-heading -->
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-md-5 col-sm-8 col-md-offset-1 col-sm-offset-3 mb50">
+          <div class="pricing-element">
+            <header>
+              <p class="package">TROUSSE DE DÉPART</p>
+
+            </header>
+            <ul class="package-details" style="margin:0 20px">
+              <li>PROGRAMME</li>
+              <li>PROFILS</li>
+              <li>FIL DE RÉACTIONS INSTANTANÉES:<br>
+                <span>Texte et photo</span></li>
+              <li>SONDAGE ET VOTE EN TEMPS RÉEL</li>
+              <li>MESSAGERIE PRIVÉE</li>
+              <li>NOTIFICATION <em>PUSH</em></li>
+              <li>CARNET DE NOTES PERSONEL</li>
+              <li>CONNEXION RÉSEAUX SOCIAUX</li>
+              <li>INTÉGRATION DE COMMANDITES DE BASE</li>
+              <li>DONNÉES D'UTILISATION DE BASE</li>
+              <li>SUPPORT TECHNIQUE</li>
+            </ul>
+            <br />
+            <div class="price" style="margin-bottom:0;"> <span class="amount">3500</span> <span class="currency">&nbsp;CAD</span></div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-8 col-md-offset-1 col-sm-offset-2 omega mt50">
+          <p class="fonct">AJOUTS</p>
+          <ul class="fonct-details" style="margin:0 20px">
+            <li>Fil de réactions instantanées : audio et vidéo</li>
+            <li>Intégration de commandites sur mesure</li>
+            <li>Donnés d'utilisation plus poussées</li>
+            <li>Partage de documents</li>
+            <li><strong>Et plus</strong></li>
+          </ul>
+          <p class="fonct padding-40-20">SERVICES-CONSEILS</p>
+          <ul class="fonct-details" style="margin:0 20px">
+            <li>Scénarisation de l'expérience numérique</li>
+            <li>Stratégies de monétisation</li>
+            <li>Bonification du plan de commandites</li>
           </ul>
         </div>
       </div>
-    </nav>
+      <!-- /.row -->
+      <div class="row text-center" style="padding-top:30px;">
+          <p><a href="https://calendly.com/fanslab/" target="_blank"><img src="images/btn_appel_big.png" width="423" height="57" alt="Planifiez un appel"></a><br>
+          <span style="font-size:14px; color:#fff;">pour discuter d'une offre adaptée à vos besoins</span></p>
+      </div>
+    </div>
+  </section>
+  <a name="contact" id="contact"></a>
+  <!-- =========================
+     CONTACT
+============================== -->
+  <section class="contacts contact-us-2 padding-120-125 lg-bg" id="contact-us-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1">
+        <div class="section-heading text-center">
+          <h2 class="heading-text">Contact</h2>
+          <hr class="lines">
+          <p class="sub-heading" style="margin-">Pour discuter d'une offre adaptée à vos besoins</p>
 
-    <div class="container">
-      <div class="padding"></div>
 
-      <section id="what">
-        <img src="img/quoi.jpg" alt="Rassemblez les émotions de vos fans sur vos plateformes On Air, Online et On Site" class="hero" />
-        <p>
-          Que ce soit devant une émission, un événement culturel, un match de hockey ou une conférence, la plateforme de divertissement social <strong>Liveshout</strong> permet de vivre ou revivre l’expérience des fans autrement.
-        </p>
-        <p>
-          <strong>Réunissez</strong> vos audiences, <strong>captez</strong> leurs émotions et <strong>stimulez</strong> leur engagement en temps réel.
-        </p>
-      </section>
-
-      <section id="how">
-        <img src="img/etapes.jpg" alt="Amplifiez l'expérience de vos fans en 3 étapes faciles" />
-      </section>
-
-      <section id="team">
-        <h1>Leadership</h1>
-        <div id="team-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-          <ol class="carousel-indicators">
-            <li data-target="#team-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#team-carousel" data-slide-to="1"></li>
-            <li data-target="#team-carousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <ul class="list-inline">
-                <li class="team-member">
-                  <img src="img/team/photo-team-00.jpg" alt="" />
-                  <h2>Stéphane Dumont</h2>
-                  <h3>Président</h3>
-                </li>
-                <li class="team-member">
-                  <img src="img/team/photo-team-01.jpg" alt="" />
-                  <h2>Fred Dompierre</h2>
-                  <h3>Fondateur &amp;<br> VP Innovation produit</h3>
-                </li>
-                <li class="team-member">
-                  <img src="img/team/photo-team-03.jpg" alt="" />
-                  <h2>Renaud Sylvain</h2>
-                  <h3>Développement des affaires</h3>
-                </li>
-              </ul>
-            </div>
-            <div class="item">
-              <ul class="list-inline">
-                <li class="team-member">
-                  <img src="img/team/photo-team-09.jpg" alt="" />
-                  <h2>Nicolas Mercier</h2>
-                  <h3>Développeur principal</h3>
-                </li>
-                <li class="team-member">
-                  <img src="img/team/photo-team-10.jpg" alt="" />
-                  <h2>Olivier Fortin</h2>
-                  <h3>Développeur</h3>
-                </li>
-                <li class="team-member">
-                  <img src="img/team/photo-team-11.jpg" alt="" />
-                  <h2>Sophie Pigeon</h2>
-                  <h3>Coordonnatrice,<br>Développement stratégique</h3>
-                </li>
-              </ul>
-            </div>
-            <div class="item">
-              <ul class="list-inline">
-                <li class="team-member">
-                  <img src="img/team/photo-team-05.jpg" alt="" />
-                  <h2>Stéphane Vidal</h2>
-                  <h3>Mentor</h3>
-                </li>
-                <li class="team-member">
-                  <img src="img/team/photo-team-08.jpg" alt="" />
-                  <h2>Karim Salabi</h2>
-                  <h3>Aviseur</h3>
-                </li>
-                <li class="team-member">
-                  <img src="img/team/photo-team-07.jpg" alt="" />
-                  <h2>Yasha Sekhavat</h2>
-                  <h3>Aviseur</h3>
-                </li>
-              </ul>
-            </div>
           </div>
-          <a class="left carousel-control" href="#team-carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#team-carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+        <!-- /.section-heading -->
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+
+        <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 mb50">
+          <p class="sub-heading contact">Appelez-nous</p>
+          <p class="sub-heading" style="margin-bottom:40px; font-size:2.44rem;text-align: center;">514-800-9878</p>
+          <p class="sub-heading contact">Écrivez-nous</p>
+          <form action="php/sendmail.php" id="contact-form" class="row">
+          <div class="form-underlined">
+            <input type="text" name="name" class="form-control" placeholder="Nom">
+          </div>
+          <div class="form-underlined">
+            <input type="email" name="email" class="form-control" placeholder="Courriel">
+          </div>
+          <div class="form-underlined">
+            <input type="text" name="cie" class="form-control" placeholder="Compagnie">
+          </div>
+          <div class="form-underlined">
+              <textarea rows="1" name="message" class="form-control" placeholder="Message" style="height: 92px;"></textarea>
+          </div>
+          <div class="col-md-12 text-center">
+            <input type="image" src="images/btn_envoyer.png" alt="Envoyer" class="btn">
+          </div>
+          <div class="result col-md-12">
+          <p class="success-msg"><img src="icons/check.svg" class="icon inject-svg icon-xs" alt=""> Merci! Votre message a bien été acheminé.</p>
+          <p class="error-msg"><img src="icons/close-circle.svg" class="icon inject-svg icon-xs" alt=""> Désolé, quelque chose ne fonctionne pas.</p>
+           </div>
+          </form>
+
         </div>
-      </section>
-
-      <section>
-        <img src="img/couch.jpg" alt="Vos audiences sont-elles passives ou actives? La vaste industrie des contenus doit se réinventer pour éviter l'inévitable." />
-      </section>
-
-      <section id="contact">
-        <h1>Contactez-nous pour en discuter</h1>
-        <h2>Comme nous innovons tous les jours, nous accepterons bientôt les fax.</h2>
-        <div class="row">
-          <div class="col-sm-5">
-            <address class="">
-              <p>
-                Liveshout <br>
-                1321 Brown <br>
-                Montréal, QC <br>
-                H4H 2B1
-              </p>
-              <p>
-                (514) 800.7898
-              </p>
-              <p>
-                <a href="mailto:info@liveshout.com">info@liveshout.com</a>
-              </p>
-              <p>
-                <a href="https://twitter.com/LiveshoutApp" target="_blank">
-                  <img src="img/twitter.png" alt="Twitter" />
-                </a>
-                <a href="https://www.facebook.com/LiveShout" target="_blank">
-                  <img src="img/facebook.png" alt="Facebook" />
-                </a>
-              </p>
-            </address>
-          </div>
-          <div class="col-sm-7">
-            <form id="contact-form" action="/" method="post">
-              <div class="form-group">
-                <label for="name">Nom</label>
-                <input id="name" type="text" name="name" value="" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" type="text" name="emailFrom" value="" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="message">Ton message</label>
-                <textarea id="message" name="message" class="form-control"></textarea>
-              </div>
-              <div>
-                <button type="submit" class="btn btn-primary">Envoyer!</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        Liveshout™ Copyright © 2015. Tous droits réservés.
-      </footer>
 
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        $(".nav li a[href^='#']").on('click', function (e) {
-          e.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 300, function (){
-            window.location.hash = hash;
-            $('.collapse').collapse('hide');
-          });
-        });
-        $('#contact-form').on('submit', function (e) {
-          $(".error").hide();
-      		var hasError = false;
-      		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-      		var emailFromVal = $("#email").val();
-      		if(emailFromVal == '') {
-      			$("#email").after('<span class="error">Tu as oublié de saisir ton adresse courriel.</span>');
-      			hasError = true;
-      		} else if(!emailReg.test(emailFromVal)) {
-      			$("#email").after('<span class="error">SVP saisie une adresse courriel valide.</span>');
-      			hasError = true;
-      		}
-      		var nameVal = $("#name").val();
-      		if(nameVal == '') {
-      			$("#name").after('<span class="error">Tu as oublié de saisir ton nom.</span>');
-      			hasError = true;
-      		}
-      		var messageVal = $("#message").val();
-      		if(messageVal == '') {
-      			$("#message").after('<span class="error">Tu as oublié de saisir ton message.</span>');
-      			hasError = true;
-      		}
-      		if(!hasError) {
-      			$.post("sendemail.php", {
-              emailFrom: emailFromVal,
-              name: nameVal,
-              message: messageVal
-            }, function (data) {
-              $("#contact-form").slideUp("normal", function () {
-                $("#contact-form").before('<h3>Bravo!</h3><p>Ton message a été envoyé! Nous te contactons dans les 48 heures.</p>');
-              });
-         		});
-      		}
-      		return false;
-        });
-      });
-    </script>
-  </body>
+  </div>
+  <!-- /.row -->
+</div>
+
+<!-- =========================
+     FOOTER
+============================== -->
+<footer class="footers footer-2 text-center editBG" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 mb30">
+        <p class="copyright"><span>Liveshout App, un produit de Fans Lab</span><br>
+          4035 St-Ambroise, Montréal (Québec) H4C 2E1 CANADA</p>
+
+                  <ul class="socialize">
+                    <li><a href="https://www.facebook.com/LiveShout/"> <i class="icon svg-social-facebook"></i> </a></li>
+                    <li><a href="https://twitter.com/LiveshoutApp"> <i class="icon svg-social-twitter"></i> </a></li>
+                    <li><a href="https://www.linkedin.com/company/2968031"> <i class="icon svg-social-linkedin"></i> </a></li>
+                  </ul>
+      </div>
+      <div class="col-sm-6 mb30">
+        <!-- Begin MailChimp Signup Form -->
+        <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+
+        <form action="http://liveshout.us11.list-manage.com/subscribe/post?u=f71270cd6fe93200efd3e822b&amp;id=73f76b93ce" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="text-align:left;">
+
+          <p style="    font-size: 14px;
+              line-height: 15px;
+              text-align: left;color:#fff;
+              padding-top: 10px;font-weight: 700;">Inscrivez-vous à notre infolettre</p>
+
+        	<input type="email" value="" placeholder="COURRIEL" name="EMAIL" class="required email" id="mce-EMAIL" style="
+    background-color: #585B60;
+    color: #fff;
+    border: 0;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+    width: 50%;
+    padding-left: 10px;"><input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="button" style="
+    background-color: #00a4e2;
+    text-transform: uppercase;
+    border: 0;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-right: 10px;margin: 0;
+    display: inline-block;
+">
+        	<div id="mce-responses" class="clear">
+        		<div class="response" id="mce-error-response" style="display:none"></div>
+        		<div class="response" id="mce-success-response" style="display:none"></div>
+        	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f71270cd6fe93200efd3e822b_73f76b93ce" tabindex="-1" value=""></dxiv>
+
+        </form>
+        <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+    </div>
+    <!-- /.row -->
+  </div>
+</footer>
+</div>
+<!-- /end page -->
+
+<!-- =========================
+     SCRIPTS
+============================== -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.mixitup.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/SVGinject.js"></script>
+<script src="js/application.js"></script>
+
+<!-- Google Analytics -->
+<script>
+        var _gaq=[['_setAccount','UA-29115111-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+
+		$(window).scroll(function() {
+if ($(this).scrollTop() > 130){
+    $('.navbar-fixed-top').addClass("sticky");
+  }
+  else{
+    $('.navbar-fixed-top').removeClass("sticky");
+  }
+});
+</script>
+</body>
 </html>
