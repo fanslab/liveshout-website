@@ -406,7 +406,12 @@ $('#contact-form').on('submit', function(e) {
        error_msg = $(this).find('.error-msg'),
        data = $(this).serialize();
 
-   if (validateEmail( $(this).find('input[name="email"]').val() )) {
+	if(!$(this).find('input[name="name"]').val() || !$(this).find('input[name="email"]').val() || !$(this).find('textarea[name="message"]').val() || !$(this).find('input[name="cie"]').val()){
+		error_msg.fadeIn(1000);
+		success_msg.fadeOut(500);
+	}else if (validateEmail( $(this).find('input[name="email"]').val() )) {
+			error_msg.fadeOut(500);
+			success_msg.fadeOut(500);
       $.ajax({
          type: "POST",
          url: $(this).attr('action'),

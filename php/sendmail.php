@@ -3,7 +3,7 @@
 $name = trim($_POST['name']);
 $email = trim($_POST['email']);
 $cie = trim($_POST['cie']);
-$phone = trim($_POST['tel']);
+//$phone = trim($_POST['tel']);
 $message = trim($_POST['message']);
 
 
@@ -22,7 +22,7 @@ if( isset($name) && isset($email) ) {
 	$body = <<<EOD
 	<strong>Name:</strong> $name <br>
 	<strong>Email:</strong> <a href="mailto:$email?subject=feedback" "email me">$email</a> <br> <br>
-	<strong>Phone:</strong> $phone <br>
+	<strong>Company:</strong> $cie <br>
 	<strong>Message:</strong> $message <br>
 EOD;
 //Must end on first column
