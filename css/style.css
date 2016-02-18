@@ -150,7 +150,7 @@ a {
   transition: all 0.3s;
 }
 a:hover {
-  color: #00a4e2;
+  color: #1677CB;
   text-decoration: none;
 }
 a:hover .icon svg {
@@ -228,6 +228,7 @@ button:focus {
 .icon-md svg {
   width: 50px;
   height: 50px;
+  fill: #EF4323;
 }
 .icon-sm svg {
   width: 55px;
@@ -520,7 +521,7 @@ button:focus {
   background-size: cover;
 }
 .dark-image-bg {
-  background: url(../images/app-home-bg.jpg);
+  background-color: #444A59;
   background-position: center top;
   background-size: cover;
 }
@@ -649,7 +650,7 @@ button:focus {
   margin-top: 20px;
   margin-bottom: 63px;
   font-weight:400;
-  color:#00a4e2;
+  color:#444A59;
 }
 .contacts .sub-heading{
   margin-bottom:20px;
@@ -697,7 +698,7 @@ button:focus {
   margin: auto;
 }
 h3.title-text{
-	color:#00a4e2;
+	color:#fff;
 	font-weight:700;
 	font-size:19px;}
 .feature-side-content .title-text{color:#4D5055;}
@@ -1795,10 +1796,10 @@ h3.title-text{
   font-weight:400;
 }
 .book-home .heading-text span {
-  color:#000;
+  color:#EF4323;
   font-size:38px;
   font-family:"Montserrat", "Trebuchet MS", Arial, Helvetica, sans-serif;
-  font-weight:700;
+  font-weight:500;
 }
 @media (min-width: 992px) {
   .book-home {
@@ -4092,8 +4093,34 @@ h3.title-text{
 
 /*# sourceMappingURL=style.css.map */
 
-.btn-planifier{
+.btn-planifier span{
+  border: 2px solid #EF4323;
+  border-radius: 3px;
+  display: block;
+  color: #EF4323;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btn-envoyer{
+  border: 2px solid #EF4323;
+  border-radius: 3px;
+  display: block;
+  color: #EF4323;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent;
+  display:inline-block;
+}
 
+
+
+.btn-planifier.btn-big span{
+  font-size:40px;
+  display:inline-block;
+  line-height: 63px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
 }
 
 @media (max-width: 500px) {

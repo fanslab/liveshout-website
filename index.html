@@ -66,7 +66,7 @@
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nemo-navigation" aria-expanded="false"> <span class="sr-only">Navigation</span> <span class="icon-bar icon-bar-top"></span> <span class="icon-bar icon-bar-middle"></span> <span class="icon-bar icon-bar-bottom"></span> </button>
 
         <!-- YOUR LOGO -->
-        <a class="navbar-brand" href="#home"> <img src="images/logo-alt.png" alt=""> </a> </div>
+        <a class="navbar-brand" href="#home"> <img src="images/liveshout-logo-orange.png" alt=""> </a> </div>
       <div class="collapse navbar-collapse" id="nemo-navigation">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#experience">Expérience</a></li>
@@ -74,7 +74,7 @@
           <li><a href="#benefices">Bénéfices</a></li>
           <li><a href="#tarification">Tarification</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="visible-md visible-lg visible-xs"><a href="https://calendly.com/fanslab/" target="_blank"><img src="images/btn_appel.png" width="179" height="36" alt="Planifiez un appel"></a></li>
+          <li class="visible-md visible-lg visible-xs"><a class="btn-planifier" href="https://calendly.com/fanslab/" target="_blank"><span>Planifier un appel</span></a></li>
         </ul>
       </div>
     </div>
@@ -324,7 +324,7 @@
           <div class="media">
             <div class="media-right"> <i class="icon svg-check width-100"></i> </div>
             <div class="media-body">
-              <h3 class="title-text" style="color:#00A4E1; padding-top:7px;">UTILE ET SIMPLE</h3>
+              <h3 class="title-text" style="color:#444A59; padding-top:7px;">UTILE ET SIMPLE</h3>
               <ul>
                 <li>Navigation intuitive et design épuré</li>
                 <li>Information centralisée et mises à jour instantanées</li>
@@ -335,7 +335,7 @@
           <div class="media">
             <div class="media-right"> <i class="icon svg-check width-100"></i> </div>
             <div class="media-body">
-              <h3 class="title-text" style="color:#00A4E1; padding-top:7px;">INTERACTIF ET ENGAGEANT</h3>
+              <h3 class="title-text" style="color:#444A59; padding-top:7px;">INTERACTIF ET ENGAGEANT</h3>
               <ul>
                 <li>Discussion continue</li>
                 <li>Valorisation de la contribution de l'audience</li>
@@ -346,7 +346,7 @@
           <div class="media">
             <div class="media-right"> <i class="icon svg-check width-100"></i> </div>
             <div class="media-body">
-              <h3 class="title-text" style="color:#00A4E1; padding-top:7px;">PERFORMANT</h3>
+              <h3 class="title-text" style="color:#444A59; padding-top:7px;">PERFORMANT</h3>
               <ul>
                 <li>Amélioration de la connaissance et des préférences des participants</li>
                 <li>Loyauté de l'audience et des partenaires</li>
@@ -401,7 +401,7 @@
               <li>SUPPORT TECHNIQUE</li>
             </ul>
             <br />
-            <div class="price" style="margin-bottom:0;"> <span class="amount">3500</span> <span class="currency">&nbsp;CAD</span></div>
+            <div class="price" style="margin-bottom:0;"> <span class="amount">3500 $</span> <span class="currency">&nbsp;CA</span></div>
           </div>
         </div>
         <div class="col-md-5 col-sm-8 col-md-offset-1 col-sm-offset-2 omega mt50">
@@ -423,7 +423,7 @@
       </div>
       <!-- /.row -->
       <div class="row text-center" style="padding-top:30px;">
-          <p><a href="https://calendly.com/fanslab/" target="_blank"><img class="btn-planifier" src="images/btn_appel_big.png" width="423" height="57" alt="Planifiez un appel"></a><br>
+          <p><a class="btn-planifier btn-big" href="https://calendly.com/fanslab/" target="_blank"><span>Planifier un appel</span></a><br>
           <span style="font-size:14px; color:#fff;">pour discuter d'une offre adaptée à vos besoins</span></p>
       </div>
     </div>
@@ -450,9 +450,9 @@
 
     <div class="row">
         <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 mb50">
-          <p class="sub-heading contact">Appelez-nous</p>
+          <p class="sub-heading contact text-center"><i class="icon svg-phone icon-md"></i></p>
           <p class="sub-heading" style="margin-bottom:40px; font-size:30px;text-align: center;">(514) 800-7898</p>
-          <p class="sub-heading contact">Écrivez-nous</p>
+          <p class="sub-heading contact text-center"><i class="icon svg-mail icon-md"></i></p>
           <form action="php/sendmail.php" id="contact-form" class="row">
           <div class="form-underlined">
             <input type="text" name="name" class="form-control" placeholder="Nom">
@@ -467,7 +467,7 @@
               <textarea rows="1" name="message" class="form-control" placeholder="Message" style="height: 92px;"></textarea>
           </div>
           <div class="col-md-12 text-center">
-            <input type="image" src="images/btn_envoyer.png" alt="Envoyer" class="btn">
+            <input type="button" value="Envoyer" alt="Envoyer" class="btn-envoyer">
           </div>
           <div class="result col-md-12">
           <p class="success-msg">Merci! Votre message a bien été acheminé.</p>
@@ -519,7 +519,7 @@
     font-size: 15px;
     width: 50%;
     padding-left: 10px;"><input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="button" style="
-    background-color: #00a4e2;
+    background-color: #EF4323;
     text-transform: uppercase;
     border: 0;
     color: #fff;
